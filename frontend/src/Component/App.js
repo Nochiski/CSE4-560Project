@@ -1,23 +1,48 @@
-import logo from '../Assets/logo.svg';
+import { useState } from 'react';
 import '../CSS/App.css';
 
+const selected = {
+  Player : "Player",
+  Country : "Country",
+  Game : "Game"
+}
 function App() {
+  const [selectedItem, setSelectedItem] = useState(selected.Player);
+
+  const handleClick = (selected) => {
+    setSelectedItem(selected)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='class_tab'>
+        <button className='tab_bar_button' onClick={()=>handleClick(selected.Player)}>
+          {selectedItem === selected.Player ? <b>Player</b> : "Player"}
+          </button>
+        <button className='tab_bar_button' onClick={()=>handleClick(selected.Country)}>
+        {selectedItem === selected.Country ? <b>Country</b> : "Country"}
+        </button>
+        <button className='tab_bar_button' onClick={()=>handleClick(selected.Game)}>
+        {selectedItem === selected.Game ? <b>Game</b> : "Game"}
+        </button>
+      </div>
+      <div className='search_bar'>
+        <div className='search_bar_top'>
+          
+          <form>
+            <input type="text"></input>
+          </form>
+          <button>
+            Search
+          </button>
+        </div>
+        <div>
+
+        </div>
+      </div>
+      <div className='statistic'>
+
+      </div>
     </div>
   );
 }
