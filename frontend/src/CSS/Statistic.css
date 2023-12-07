@@ -1,0 +1,55 @@
+.stat_background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.stat_row:hover{
+    background-color: antiquewhite;
+}
+
+.stat_header{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.stat_header_item{
+    width: 150px;
+    text-align: center;
+}
+
+.stat_header_name{
+    width: 200px;
+    text-align: center;
+}
+
+.stat_body{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    padding: 0 10px;
+    height: calc(100vh - 200px - 26px); /* 200px is sum of serach bar and nav bar height and 26 is stat header height*/
+}
+
+.stat_row{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.row_name{
+    width: 200px;
+    text-align: center; 
+}
+
+.row_column{
+    width: 150px;
+    text-align: center;
+}
