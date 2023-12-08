@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       <div className='class_tab'>
         <button className='tab_bar_button' onClick={()=>handleClick(selected.Player)}>
-          {selectedItem === selected.Player ? <b>Search Player</b> : "Search Player"}
+          {selectedItem === selected.Player ? <b>Search Athletes</b> : "Search Athletes"}
           </button>
         <button className='tab_bar_button' onClick={()=>handleClick(selected.AddPlayer)}>
         {selectedItem === selected.AddPlayer ? <b>+</b> : "+"}
