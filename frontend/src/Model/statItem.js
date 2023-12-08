@@ -1,5 +1,5 @@
 export class ModelItem{
-    constructor(name, gold, silver, bronze, gender, height, weight, nationality){
+    constructor(name, gold, silver, bronze, gender, height, weight, nationality, sport){
         this.name = name;
         this.gold = gold;
         this.sliver = silver;
@@ -11,6 +11,7 @@ export class ModelItem{
         }
         this.weight = weight;
         this.height = height;
-        this.nationality = nationality
+        this.nationality = nationality;
+        this.sport = sport;
     }
 }

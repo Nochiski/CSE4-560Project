@@ -2,7 +2,8 @@ export const getSports = () => {
     return sports;
 } 
 
-const sports = [(1,'Aeronautics'),
+const sports = [(0, 'all'),
+(1,'Aeronautics'),
 (2,'Alpine Skiing'),
 (3,'Alpinism'),
 (4,'Archery'),

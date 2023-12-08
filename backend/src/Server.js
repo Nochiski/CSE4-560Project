@@ -16,8 +16,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/search', async (req,res) => {
-    const {name, nationality, gender, height, weight} = req.query
-    const rows = await getPerson(name, nationality, gender, height, weight);
+    const {name, nationality, gender, height, weight, sport} = req.query
+    const rows = await getPerson(name, nationality, gender, height, weight, sport);
     res.status(200).json(rows);
 })
 
